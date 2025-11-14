@@ -382,17 +382,24 @@ footer {
     text-align: center;
   }
 /* Mobile fix */
+/* Mobile fix */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; /* stack vertically */
-    align-items: center;
-    gap: 1rem; /* extra spacing between buttons */
+    flex-direction: row; /* keep horizontal */
+    flex-wrap: wrap;     /* allow wrapping if too many buttons */
+    justify-content: center;
+    gap: 0.5rem;         /* tighter spacing */
   }
 
   nav a {
-    width: 60%; /* make buttons wider for touch */
+    padding: 0.5rem 0.8rem; /* smaller buttons */
+    font-size: 0.9rem;      /* reduce text size */
+    border-radius: 8px;
+    width: auto;            /* no forced width */
     text-align: center;
   }
+}
+
 }
   .ceo-profile img {
     width: 180px;
