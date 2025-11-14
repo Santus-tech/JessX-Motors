@@ -376,14 +376,16 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  @media (max-width: 768px) {
+
   .ceo-profile {
     flex-direction: column;
     text-align: center;
   }
 
-/* Mobile fix */
-@media (max-width: 768px) {
+  .ceo-profile img {
+    width: 180px;
+  }
+
   nav {
     flex-direction: row; 
     flex-wrap: wrap;    
@@ -398,13 +400,6 @@ footer {
     width: auto;       
     text-align: center;
   }
-}
-
-}
-  .ceo-profile img {
-    width: 180px;
-  }
-}
 
   .counter-box {
     flex-direction: column;
@@ -418,4 +413,4 @@ footer {
   .hero .tagline {
     font-size: 1rem;
   }
-
+}
