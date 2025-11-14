@@ -28,19 +28,24 @@ header h1 {
   text-transform: uppercase;
 }
 
+
 nav {
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* adds spacing between buttons */
 }
 
 nav a {
   color: #fff;
-  margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.5rem 1rem;
-  border: 2px solid #fff; 
+  padding: 0.7rem 1.2rem;
+  border: 2px solid #fff;
   border-radius: 10px;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
 nav a:hover {
@@ -376,7 +381,19 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+/* Mobile fix */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    gap: 1rem; /* extra spacing between buttons */
+  }
 
+  nav a {
+    width: 60%; /* make buttons wider for touch */
+    text-align: center;
+  }
+}
   .ceo-profile img {
     width: 180px;
   }
