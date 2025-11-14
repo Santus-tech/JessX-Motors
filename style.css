@@ -1,0 +1,397 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a0a;
+  color: #f2f2f2;
+}
+
+/* Header */
+header {
+  background: #af070f; 
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  border-bottom: 4px solid #111; 
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff; 
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #ffffff;
+  color: #9e070f;
+}
+
+.button1,
+button,
+form button {
+  background: #92060d;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button1:hover,
+button:hover,
+form button:hover {
+  background: #fff;
+  color: #9e070f;
+  border-color: #9e070f;
+}
+
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 3rem 2rem;
+  overflow: hidden;
+}
+
+/* Blurred photo background */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('assets/defender.jpeg') center/cover no-repeat;
+  filter: blur(1px);
+  transform: scale(1.1); 
+  z-index: 0;
+}
+
+/* Dark overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  color: #e50914;
+}
+
+.hero .tagline {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #f2f2f2;
+}
+
+.hero .highlights {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem 0;
+}
+
+.hero .highlights li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.button1 {
+  background: #e50914;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button1:hover {
+  background: #fff;
+  color:#9e070f
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.car-card {
+  background: #1a1a1a;
+  border: 2px solid #e50914;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: scale(1.03);
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 1rem;
+}
+
+.car-info h2 {
+  color: #e50914;
+}
+
+button {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #fcfcfc;
+  color: #aa0707;
+}
+
+.details {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Contact section */
+.contact {
+  background: #111;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #e50914;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+form button {
+  background: #e50914;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #fdfdfd;
+}
+
+/* About page */
+.about {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.about h2 {
+  color: #e50914;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+ /* CEO Section */
+.ceo {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+.ceo-profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ceo-profile img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #e50914;
+}
+
+.ceo-info {
+  flex: 1;
+}
+
+.ceo-info h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.ceo-info p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Counter section */
+.stats {
+  margin-top: 2rem;
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stats h3 {
+  color: #e50914;
+  margin-bottom: 1rem;
+}
+
+.counter-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #f2f2f2;
+}
+
+.counter-box div {
+  background: #111;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e50914;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.social {
+  margin-top: 0.5rem;
+}
+
+.social a {
+  color: #e50914;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+  .ceo-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ceo-profile img {
+    width: 180px;
+  }
+}
+
+  .counter-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero .tagline {
+    font-size: 1rem;
+  }
+}

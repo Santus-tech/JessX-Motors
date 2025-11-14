@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JessX Motors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>JessX Motors</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+  <div class="hero-content">
+    <h2>Quality Cars. Premium Services</h2>
+    <p class="tagline">JessX Motors brings you reliable vehicles tailored for Kenyan roads and lifestyles.</p>
+    <ul class="highlights">
+      <li>✔ Trusted by 300+ happy customers</li>
+      <li>✔ Financing & flexible payment options</li>
+      <li>✔ Nationwide delivery and support</li>
+    </ul>
+    <a href="#gallery" class="button1">Browse Vehicles</a>
+  </div>
+</section>
+
+  <section id="gallery" class="gallery">
+    <div class="car-card">
+      <img src="assets\lc.jpeg" alt="Toyota Land Cruiser" />
+      <div class="car-info">
+        <h2>Toyota Land Cruiser</h2>
+        <p>2022 • 4WD • KSh 6.5M</p>
+        <button onclick="toggleDetails(this)">View Details</button>
+        <div class="details hidden">
+          <p>Legendary off-road capability, leather interior, touchscreen infotainment, and adaptive cruise control.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="assets\cx5.jpeg" alt="Mazda CX-5" />
+      <div class="car-info">
+        <h2>Mazda CX-5</h2>
+        <p>2021 • AWD • KSh 3.2M</p>
+        <button onclick="toggleDetails(this)">View Details</button>
+        <div class="details hidden">
+          <p>Sporty crossover with fuel efficiency, premium sound system, and sleek red finish.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="assets\forester.jpeg" alt="Subaru Forester" />
+      <div class="car-info">
+        <h2>Subaru Forester</h2>
+        <p>2020 • AWD • KSh 2.8M</p>
+        <button onclick="toggleDetails(this)">View Details</button>
+        <div class="details hidden">
+          <p>Reliable performance, spacious interior, and symmetrical all-wheel drive for all terrains.</p>
+        </div>
+      </div>
+    </div>
+    <div class="car-card">
+      <img src="assets\VW Tiguan.jpg" alt="VW Tiguan" />
+      <div class="car-info">
+        <h2>VW Tiguan</h2>
+        <p>2020 • AWD • KSh 3.2M</p>
+        <button onclick="toggleDetails(this)">View Details</button>
+        <div class="details hidden">
+          <p>Peak vehicle performance, clean interior, and symmetrical all-wheel drive for all terrains.</p>
+        </div>
+      </div>
+    </div>
+    <div class="car-card">
+      <img src="assets\subaru-legacy.jpg" alt="Subaru Legacy" />
+      <div class="car-info">
+        <h2>Subaru Legacy</h2>
+        <p>2018 • AWD • KSh 2.5M</p>
+        <button onclick="toggleDetails(this)">View Details</button>
+        <div class="details hidden">
+          <p>Spacious interior, loud exhaust and rear-wheel drive for all terrains.</p>
+        </div>
+      </div>
+    </div>
+    <div class="car-card">
+      <img src="assets\GLE.jpg" alt="Mercedes GLE" />
+      <div class="car-info">
+        <h2>Mercedes GLE</h2>
+        <p>2024 • AWD • KSh 6.8M</p>
+        <button onclick="toggleDetails(this)">View Details</button>
+        <div class="details hidden">
+          <p>Best performance, spacious interior, and modern techology such as lane assist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form
+       action="https://formspree.io/f/mjkjgakg"
+  method="POST">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 JessX Motors | Ruiru, Kenya</p>
+    <div class="social">
+  <a href="https://www.tiktok.com/jessicah_sasha" target="_blank">TikTok</a>
+  
+  <a href="https://www.instagram.com/life.with.sasha_" target="_blank">Instagram</a>
+  
+  <a href="https://wa.me/254741926302" target="_blank">WhatsApp</a>
+</div>
+
+  </footer>
+
+  <script>
+    function toggleDetails(button) {
+      const details = button.nextElementSibling;
+      details.classList.toggle('hidden');
+      button.textContent = details.classList.contains('hidden') ? 'View Details' : 'Hide Details';
+    }
+  </script>
+</body>
+</html>
