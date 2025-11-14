@@ -381,21 +381,21 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-/* Mobile fix */
+
 /* Mobile fix */
 @media (max-width: 768px) {
   nav {
-    flex-direction: row; /* keep horizontal */
-    flex-wrap: wrap;     /* allow wrapping if too many buttons */
+    flex-direction: row; 
+    flex-wrap: wrap;    
     justify-content: center;
-    gap: 0.5rem;         /* tighter spacing */
+    gap: 0.5rem;
   }
 
   nav a {
-    padding: 0.5rem 0.8rem; /* smaller buttons */
-    font-size: 0.9rem;      /* reduce text size */
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;   
     border-radius: 8px;
-    width: auto;            /* no forced width */
+    width: auto;       
     text-align: center;
   }
 }
@@ -418,4 +418,4 @@ footer {
   .hero .tagline {
     font-size: 1rem;
   }
-}
+
